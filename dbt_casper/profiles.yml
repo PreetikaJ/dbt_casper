@@ -1,0 +1,38 @@
+dbt_casper:
+  outputs:
+    dev:
+      dataset: casper_data_raw
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      keyfile: 'C:/Users/jainp/Downloads/casper-code-challenge-b2a02376a078.json'
+      location: EU
+      method: service-account
+      priority: interactive
+      project: casper-code-challenge
+      threads: 10
+      type: bigquery
+  
+    staging:
+      dataset: casper_data_curated
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      keyfile: 'C:/Users/jainp/Downloads/casper-code-challenge-b2a02376a078.json'
+      location: EU
+      method: service-account
+      priority: interactive
+      project: casper-code-challenge
+      threads: 10
+      type: bigquery
+
+    prod:
+      dataset: casper_data_reporting
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      keyfile: 'C:/Users/jainp/Downloads/casper-code-challenge-b2a02376a078.json'
+      location: EU
+      method: service-account
+      priority: interactive
+      project: casper-code-challenge
+      threads: 10
+      type: bigquery
+  target: dev

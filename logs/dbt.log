@@ -1,0 +1,940 @@
+[0m18:02:50.065307 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D0FB73B2B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D0FDF07280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D0FDF070D0>]}
+
+
+============================== 18:02:50.065307 | dea1fdc1-34b2-4ad9-9ebd-4fc0c06b7668 ==============================
+[0m18:02:50.065307 [info ] [MainThread]: Running with dbt=1.12.2
+[0m18:02:50.065307 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\jainp\\Desktop\\My Repository\\dbt_casper', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'logs'}
+[0m18:02:50.109647 [info ] [MainThread]: dbt version: 1.12.2
+[0m18:02:50.118489 [info ] [MainThread]: python version: 3.10.11
+[0m18:02:50.120508 [info ] [MainThread]: python path: C:\Users\jainp\Desktop\My Repository\dbt_casper\venv\Scripts\python.exe
+[0m18:02:50.121502 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m18:02:50.126060 [info ] [MainThread]: target not specified in profile 'dbt_casper', using 'default'
+[0m18:02:50.127024 [info ] [MainThread]: Using profiles dir at C:\Users\jainp\Desktop\My Repository\dbt_casper
+[0m18:02:50.129563 [info ] [MainThread]: Using profiles.yml file at C:\Users\jainp\Desktop\My Repository\dbt_casper\profiles.yml
+[0m18:02:50.130578 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\jainp\Desktop\My Repository\dbt_casper\dbt_project.yml
+[0m18:02:50.131578 [info ] [MainThread]: Configuration:
+[0m18:02:50.132578 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m18:02:50.133604 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m18:02:50.134573 [info ] [MainThread]: Required dependencies:
+[0m18:02:50.135865 [debug] [MainThread]: Executing "git --help"
+[0m18:02:50.171767 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:02:50.171767 [debug] [MainThread]: STDERR: "b''"
+[0m18:02:50.187928 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:02:50.188341 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m18:02:50.188341 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m18:02:50.188341 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  The profile 'dbt_casper' does not have a target named 'default'. The valid target names for this profile are:
+   - dev
+   - staging
+
+
+[0m18:02:50.188341 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\jainp\Desktop\My Repository\dbt_casper\dbt_project.yml> not found
+
+[0m18:02:50.195403 [debug] [MainThread]: Command `dbt debug` failed at 18:02:50.195403 after 0.27 seconds
+[0m18:02:50.196415 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D0FB73B2B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D0FDED3D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D0FDED1900>]}
+[0m18:02:50.197445 [debug] [MainThread]: Flushing usage events
+[0m18:02:50.717759 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:07:14.732826 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019F058BB280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019F070C7490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019F070C72B0>]}
+
+
+============================== 18:07:14.732826 | 62f00273-0d41-4934-b74e-59e4e7a539d5 ==============================
+[0m18:07:14.732826 [info ] [MainThread]: Running with dbt=1.12.2
+[0m18:07:14.732826 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\jainp\\Desktop\\My Repository\\dbt_casper', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m18:07:14.770387 [info ] [MainThread]: dbt version: 1.12.2
+[0m18:07:14.770387 [info ] [MainThread]: python version: 3.10.11
+[0m18:07:14.770387 [info ] [MainThread]: python path: C:\Users\jainp\Desktop\My Repository\dbt_casper\venv\Scripts\python.exe
+[0m18:07:14.770387 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m18:07:14.770387 [info ] [MainThread]: target not specified in profile 'dbt_casper', using 'default'
+[0m18:07:14.786673 [info ] [MainThread]: Using profiles dir at C:\Users\jainp\Desktop\My Repository\dbt_casper
+[0m18:07:14.788482 [info ] [MainThread]: Using profiles.yml file at C:\Users\jainp\Desktop\My Repository\dbt_casper\profiles.yml
+[0m18:07:14.789486 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\jainp\Desktop\My Repository\dbt_casper\dbt_project.yml
+[0m18:07:14.790485 [info ] [MainThread]: Configuration:
+[0m18:07:14.791402 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m18:07:14.791402 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m18:07:14.791402 [info ] [MainThread]: Required dependencies:
+[0m18:07:14.791402 [debug] [MainThread]: Executing "git --help"
+[0m18:07:14.837220 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:07:14.837220 [debug] [MainThread]: STDERR: "b''"
+[0m18:07:14.837220 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:07:14.837220 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m18:07:14.837220 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m18:07:14.837220 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  The profile 'dbt_casper' does not have a target named 'default'. The valid target names for this profile are:
+   - dev
+   - staging
+
+
+[0m18:07:14.837220 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\jainp\Desktop\My Repository\dbt_casper\dbt_project.yml> not found
+
+[0m18:07:14.852930 [debug] [MainThread]: Command `dbt debug` failed at 18:07:14.852930 after 0.26 seconds
+[0m18:07:14.853969 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019F058BB280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019F07092FB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019F07093E20>]}
+[0m18:07:14.854952 [debug] [MainThread]: Flushing usage events
+[0m18:07:15.333458 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:15:23.191684 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B03BB6B2B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B03D3772B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B03D3770D0>]}
+
+
+============================== 18:15:23.191684 | 32a7b1a9-5a56-489d-9470-7ed33f79922a ==============================
+[0m18:15:23.191684 [info ] [MainThread]: Running with dbt=1.12.2
+[0m18:15:23.191684 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\jainp\\Desktop\\My Repository\\dbt_casper', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\jainp\\Desktop\\My Repository\\dbt_casper\\logs'}
+[0m18:15:23.217857 [info ] [MainThread]: dbt version: 1.12.2
+[0m18:15:23.217857 [info ] [MainThread]: python version: 3.10.11
+[0m18:15:23.217857 [info ] [MainThread]: python path: C:\Users\jainp\Desktop\My Repository\dbt_casper\venv\Scripts\python.exe
+[0m18:15:23.232523 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m18:15:28.475825 [info ] [MainThread]: Using profiles dir at C:\Users\jainp\Desktop\My Repository\dbt_casper
+[0m18:15:28.491611 [info ] [MainThread]: Using profiles.yml file at C:\Users\jainp\Desktop\My Repository\dbt_casper\profiles.yml
+[0m18:15:28.491611 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\jainp\Desktop\My Repository\dbt_casper\dbt_project.yml
+[0m18:15:28.491611 [info ] [MainThread]: adapter type: bigquery
+[0m18:15:28.491611 [info ] [MainThread]: adapter version: 1.12.0
+[0m18:15:28.658064 [info ] [MainThread]: Configuration:
+[0m18:15:28.658064 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:15:28.658064 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:15:28.673803 [info ] [MainThread]: Required dependencies:
+[0m18:15:28.673803 [debug] [MainThread]: Executing "git --help"
+[0m18:15:28.718447 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:15:28.728232 [debug] [MainThread]: STDERR: "b''"
+[0m18:15:28.728924 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:15:28.729932 [info ] [MainThread]: Connection:
+[0m18:15:28.731938 [info ] [MainThread]:   method: service-account
+[0m18:15:28.732931 [info ] [MainThread]:   database: casper-code-challenge
+[0m18:15:28.733932 [info ] [MainThread]:   execution_project: casper-code-challenge
+[0m18:15:28.734932 [info ] [MainThread]:   schema: casper_data_raw
+[0m18:15:28.735935 [info ] [MainThread]:   location: EU
+[0m18:15:28.737932 [info ] [MainThread]:   priority: interactive
+[0m18:15:28.739757 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m18:15:28.741866 [info ] [MainThread]:   reservation: None
+[0m18:15:28.742857 [info ] [MainThread]:   impersonate_service_account: None
+[0m18:15:28.746581 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m18:15:28.749198 [info ] [MainThread]:   job_retries: 1
+[0m18:15:28.750191 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m18:15:28.752177 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m18:15:28.753816 [info ] [MainThread]:   job_link_info_level_log: False
+[0m18:15:28.754826 [info ] [MainThread]:   timeout_seconds: 300
+[0m18:15:28.755824 [info ] [MainThread]:   client_id: None
+[0m18:15:28.756823 [info ] [MainThread]:   token_uri: None
+[0m18:15:28.757823 [info ] [MainThread]:   compute_region: None
+[0m18:15:28.758823 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m18:15:28.760402 [info ] [MainThread]:   gcs_bucket: None
+[0m18:15:28.761410 [info ] [MainThread]:   dataproc_batch: None
+[0m18:15:28.763410 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m18:15:29.368111 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m18:15:29.368111 [debug] [MainThread]: On debug: select 1 as id
+[0m18:15:29.368111 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:15:29.368111 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: 'expected str, bytes or os.PathLike object, not NoneType'
+[0m18:15:29.368111 [debug] [MainThread]: BigQuery adapter: Unhandled error while running:
+select 1 as id
+[0m18:15:29.368111 [debug] [MainThread]: BigQuery adapter: Database Error
+  expected str, bytes or os.PathLike object, not NoneType
+[0m18:15:29.375535 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m18:15:29.375535 [info ] [MainThread]: [31m1 check failed:[0m
+[0m18:15:29.375535 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >'NoneType' object has no attribute 'close'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m18:15:29.379478 [debug] [MainThread]: Command `dbt debug` failed at 18:15:29.379478 after 6.39 seconds
+[0m18:15:29.380478 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B03BB6B2B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B04F67BB50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B04F67B850>]}
+[0m18:15:29.380478 [debug] [MainThread]: Flushing usage events
+[0m18:15:29.880963 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:21:10.124561 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001473768B2B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014738E874F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014738E87310>]}
+
+
+============================== 18:21:10.124561 | f289f285-c130-4058-9812-4d5b701843db ==============================
+[0m18:21:10.124561 [info ] [MainThread]: Running with dbt=1.12.2
+[0m18:21:10.124561 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\jainp\\Desktop\\My Repository\\dbt_casper', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'log_path': 'C:\\Users\\jainp\\Desktop\\My Repository\\dbt_casper\\logs'}
+[0m18:21:10.172024 [info ] [MainThread]: dbt version: 1.12.2
+[0m18:21:10.173071 [info ] [MainThread]: python version: 3.10.11
+[0m18:21:10.174025 [info ] [MainThread]: python path: C:\Users\jainp\Desktop\My Repository\dbt_casper\venv\Scripts\python.exe
+[0m18:21:10.175037 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m18:21:11.442416 [info ] [MainThread]: Using profiles dir at C:\Users\jainp\Desktop\My Repository\dbt_casper
+[0m18:21:11.442416 [info ] [MainThread]: Using profiles.yml file at C:\Users\jainp\Desktop\My Repository\dbt_casper\profiles.yml
+[0m18:21:11.442416 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\jainp\Desktop\My Repository\dbt_casper\dbt_project.yml
+[0m18:21:11.442416 [info ] [MainThread]: adapter type: bigquery
+[0m18:21:11.442416 [info ] [MainThread]: adapter version: 1.12.0
+[0m18:21:11.608485 [info ] [MainThread]: Configuration:
+[0m18:21:11.608485 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:21:11.608485 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:21:11.608485 [info ] [MainThread]: Required dependencies:
+[0m18:21:11.608485 [debug] [MainThread]: Executing "git --help"
+[0m18:21:11.650176 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:21:11.650176 [debug] [MainThread]: STDERR: "b''"
+[0m18:21:11.650176 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:21:11.650176 [info ] [MainThread]: Connection:
+[0m18:21:11.650176 [info ] [MainThread]:   method: service-account
+[0m18:21:11.650176 [info ] [MainThread]:   database: casper-code-challenge
+[0m18:21:11.663108 [info ] [MainThread]:   execution_project: casper-code-challenge
+[0m18:21:11.664125 [info ] [MainThread]:   schema: casper_data_raw
+[0m18:21:11.665107 [info ] [MainThread]:   location: EU
+[0m18:21:11.666109 [info ] [MainThread]:   priority: interactive
+[0m18:21:11.667111 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m18:21:11.669477 [info ] [MainThread]:   reservation: None
+[0m18:21:11.670475 [info ] [MainThread]:   impersonate_service_account: None
+[0m18:21:11.671476 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m18:21:11.673548 [info ] [MainThread]:   job_retries: 1
+[0m18:21:11.674554 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m18:21:11.675554 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m18:21:11.676555 [info ] [MainThread]:   job_link_info_level_log: False
+[0m18:21:11.677557 [info ] [MainThread]:   timeout_seconds: 300
+[0m18:21:11.678557 [info ] [MainThread]:   client_id: None
+[0m18:21:11.679386 [info ] [MainThread]:   token_uri: None
+[0m18:21:11.680768 [info ] [MainThread]:   compute_region: None
+[0m18:21:11.690084 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m18:21:11.692094 [info ] [MainThread]:   gcs_bucket: None
+[0m18:21:11.694105 [info ] [MainThread]:   dataproc_batch: None
+[0m18:21:11.697034 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m18:21:12.329951 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m18:21:12.330951 [debug] [MainThread]: On debug: select 1 as id
+[0m18:21:12.331927 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:21:12.331927 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: 'expected str, bytes or os.PathLike object, not NoneType'
+[0m18:21:12.332948 [debug] [MainThread]: BigQuery adapter: Unhandled error while running:
+select 1 as id
+[0m18:21:12.333913 [debug] [MainThread]: BigQuery adapter: Database Error
+  expected str, bytes or os.PathLike object, not NoneType
+[0m18:21:12.333913 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m18:21:12.334926 [info ] [MainThread]: [31m1 check failed:[0m
+[0m18:21:12.335949 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >'NoneType' object has no attribute 'close'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m18:21:12.337944 [debug] [MainThread]: Command `dbt debug` failed at 18:21:12.337944 after 2.35 seconds
+[0m18:21:12.338916 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001473768B2B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001474B1BFB80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001474B1BE500>]}
+[0m18:21:12.338916 [debug] [MainThread]: Flushing usage events
+[0m18:21:12.815064 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:24:45.117995 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015F2BF2B280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015F2D7274C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015F2D7272E0>]}
+
+
+============================== 18:24:45.117995 | 497c04d8-4312-4d99-ad8d-ba0a802e91d7 ==============================
+[0m18:24:45.117995 [info ] [MainThread]: Running with dbt=1.12.2
+[0m18:24:45.117995 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\jainp\\Desktop\\My Repository\\dbt_casper', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\jainp\\Desktop\\My Repository\\dbt_casper\\logs'}
+[0m18:24:45.158920 [info ] [MainThread]: dbt version: 1.12.2
+[0m18:24:45.158920 [info ] [MainThread]: python version: 3.10.11
+[0m18:24:45.158920 [info ] [MainThread]: python path: C:\Users\jainp\Desktop\My Repository\dbt_casper\venv\Scripts\python.exe
+[0m18:24:45.158920 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m18:24:46.455986 [info ] [MainThread]: Using profiles dir at C:\Users\jainp\Desktop\My Repository\dbt_casper
+[0m18:24:46.457993 [info ] [MainThread]: Using profiles.yml file at C:\Users\jainp\Desktop\My Repository\dbt_casper\profiles.yml
+[0m18:24:46.457993 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\jainp\Desktop\My Repository\dbt_casper\dbt_project.yml
+[0m18:24:46.457993 [info ] [MainThread]: adapter type: bigquery
+[0m18:24:46.457993 [info ] [MainThread]: adapter version: 1.12.0
+[0m18:24:46.599919 [info ] [MainThread]: Configuration:
+[0m18:24:46.599919 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:24:46.599919 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:24:46.599919 [info ] [MainThread]: Required dependencies:
+[0m18:24:46.599919 [debug] [MainThread]: Executing "git --help"
+[0m18:24:46.658309 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:24:46.659287 [debug] [MainThread]: STDERR: "b''"
+[0m18:24:46.660315 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:24:46.661294 [info ] [MainThread]: Connection:
+[0m18:24:46.662297 [info ] [MainThread]:   method: service-account
+[0m18:24:46.663284 [info ] [MainThread]:   database: casper-code-challenge
+[0m18:24:46.664297 [info ] [MainThread]:   execution_project: casper-code-challenge
+[0m18:24:46.665301 [info ] [MainThread]:   schema: casper_data_raw
+[0m18:24:46.666292 [info ] [MainThread]:   location: EU
+[0m18:24:46.667288 [info ] [MainThread]:   priority: interactive
+[0m18:24:46.668670 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m18:24:46.670555 [info ] [MainThread]:   reservation: None
+[0m18:24:46.672660 [info ] [MainThread]:   impersonate_service_account: None
+[0m18:24:46.674887 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m18:24:46.676619 [info ] [MainThread]:   job_retries: 1
+[0m18:24:46.677561 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m18:24:46.678557 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m18:24:46.678557 [info ] [MainThread]:   job_link_info_level_log: False
+[0m18:24:46.680405 [info ] [MainThread]:   timeout_seconds: 300
+[0m18:24:46.681323 [info ] [MainThread]:   client_id: None
+[0m18:24:46.682350 [info ] [MainThread]:   token_uri: None
+[0m18:24:46.683339 [info ] [MainThread]:   compute_region: None
+[0m18:24:46.684331 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m18:24:46.685784 [info ] [MainThread]:   gcs_bucket: None
+[0m18:24:46.685784 [info ] [MainThread]:   dataproc_batch: None
+[0m18:24:46.689465 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m18:24:47.258378 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m18:24:47.258378 [debug] [MainThread]: On debug: select 1 as id
+[0m18:24:47.260386 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:24:47.260386 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: 'expected str, bytes or os.PathLike object, not NoneType'
+[0m18:24:47.260386 [debug] [MainThread]: BigQuery adapter: Unhandled error while running:
+select 1 as id
+[0m18:24:47.262399 [debug] [MainThread]: BigQuery adapter: Database Error
+  expected str, bytes or os.PathLike object, not NoneType
+[0m18:24:47.262399 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m18:24:47.264166 [info ] [MainThread]: [31m1 check failed:[0m
+[0m18:24:47.264166 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >'NoneType' object has no attribute 'close'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m18:24:47.264166 [debug] [MainThread]: Command `dbt debug` failed at 18:24:47.264166 after 2.28 seconds
+[0m18:24:47.267370 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015F2BF2B280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015F3FA63760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015F3FA62770>]}
+[0m18:24:47.267370 [debug] [MainThread]: Flushing usage events
+[0m18:24:47.751409 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:33:04.907603 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED252DB280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED26AD3490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED26AD32B0>]}
+
+
+============================== 18:33:04.923642 | 4abea259-e320-4d20-a9b3-c66e088781cb ==============================
+[0m18:33:04.923642 [info ] [MainThread]: Running with dbt=1.12.2
+[0m18:33:04.923642 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\jainp\\Desktop\\My Repository\\dbt_casper', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'log_path': 'C:\\Users\\jainp\\Desktop\\My Repository\\dbt_casper\\logs'}
+[0m18:33:04.945709 [info ] [MainThread]: dbt version: 1.12.2
+[0m18:33:04.945709 [info ] [MainThread]: python version: 3.10.11
+[0m18:33:04.945709 [info ] [MainThread]: python path: C:\Users\jainp\Desktop\My Repository\dbt_casper\venv\Scripts\python.exe
+[0m18:33:04.961802 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m18:33:06.236500 [info ] [MainThread]: Using profiles dir at C:\Users\jainp\Desktop\My Repository\dbt_casper
+[0m18:33:06.236500 [info ] [MainThread]: Using profiles.yml file at C:\Users\jainp\Desktop\My Repository\dbt_casper\profiles.yml
+[0m18:33:06.236500 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\jainp\Desktop\My Repository\dbt_casper\dbt_project.yml
+[0m18:33:06.236500 [info ] [MainThread]: adapter type: bigquery
+[0m18:33:06.236500 [info ] [MainThread]: adapter version: 1.12.0
+[0m18:33:06.439627 [info ] [MainThread]: Configuration:
+[0m18:33:06.439627 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:33:06.439627 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:33:06.439627 [info ] [MainThread]: Required dependencies:
+[0m18:33:06.439627 [debug] [MainThread]: Executing "git --help"
+[0m18:33:06.490057 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:33:06.491135 [debug] [MainThread]: STDERR: "b''"
+[0m18:33:06.492135 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:33:06.493153 [info ] [MainThread]: Connection:
+[0m18:33:06.494147 [info ] [MainThread]:   method: service-account
+[0m18:33:06.495137 [info ] [MainThread]:   database: casper-code-challenge
+[0m18:33:06.496135 [info ] [MainThread]:   execution_project: casper-code-challenge
+[0m18:33:06.497201 [info ] [MainThread]:   schema: casper_data_raw
+[0m18:33:06.498134 [info ] [MainThread]:   location: EU
+[0m18:33:06.499136 [info ] [MainThread]:   priority: interactive
+[0m18:33:06.500281 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m18:33:06.501282 [info ] [MainThread]:   reservation: None
+[0m18:33:06.502283 [info ] [MainThread]:   impersonate_service_account: None
+[0m18:33:06.502283 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m18:33:06.503280 [info ] [MainThread]:   job_retries: 1
+[0m18:33:06.504282 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m18:33:06.506282 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m18:33:06.507555 [info ] [MainThread]:   job_link_info_level_log: False
+[0m18:33:06.508631 [info ] [MainThread]:   timeout_seconds: 300
+[0m18:33:06.511170 [info ] [MainThread]:   client_id: None
+[0m18:33:06.512925 [info ] [MainThread]:   token_uri: None
+[0m18:33:06.514604 [info ] [MainThread]:   compute_region: None
+[0m18:33:06.515595 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m18:33:06.516608 [info ] [MainThread]:   gcs_bucket: None
+[0m18:33:06.517595 [info ] [MainThread]:   dataproc_batch: None
+[0m18:33:06.518953 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m18:33:07.101676 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m18:33:07.101676 [debug] [MainThread]: On debug: select 1 as id
+[0m18:33:07.101676 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:33:07.101676 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: 'expected str, bytes or os.PathLike object, not NoneType'
+[0m18:33:07.101676 [debug] [MainThread]: BigQuery adapter: Unhandled error while running:
+select 1 as id
+[0m18:33:07.101676 [debug] [MainThread]: BigQuery adapter: Database Error
+  expected str, bytes or os.PathLike object, not NoneType
+[0m18:33:07.101676 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m18:33:07.101676 [info ] [MainThread]: [31m1 check failed:[0m
+[0m18:33:07.101676 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >'NoneType' object has no attribute 'close'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m18:33:07.101676 [debug] [MainThread]: Command `dbt debug` failed at 18:33:07.101676 after 2.33 seconds
+[0m18:33:07.113553 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED252DB280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED38E0E7A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED38E0C640>]}
+[0m18:33:07.113553 [debug] [MainThread]: Flushing usage events
+[0m18:33:07.591883 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:42:14.160109 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D2199DB2E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D21C1A34F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D21C1A3310>]}
+
+
+============================== 18:42:14.175955 | 2efcc709-124a-45e0-a91e-3f322b77345b ==============================
+[0m18:42:14.175955 [info ] [MainThread]: Running with dbt=1.12.2
+[0m18:42:14.175955 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\jainp\\Desktop\\My Repository\\dbt_casper', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\jainp\\Desktop\\My Repository\\dbt_casper\\logs'}
+[0m18:42:14.205774 [info ] [MainThread]: dbt version: 1.12.2
+[0m18:42:14.205774 [info ] [MainThread]: python version: 3.10.11
+[0m18:42:14.205774 [info ] [MainThread]: python path: C:\Users\jainp\Desktop\My Repository\dbt_casper\venv\Scripts\python.exe
+[0m18:42:14.205774 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m18:42:15.499102 [info ] [MainThread]: Using profiles dir at C:\Users\jainp\Desktop\My Repository\dbt_casper
+[0m18:42:15.500101 [info ] [MainThread]: Using profiles.yml file at C:\Users\jainp\Desktop\My Repository\dbt_casper\profiles.yml
+[0m18:42:15.501066 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\jainp\Desktop\My Repository\dbt_casper\dbt_project.yml
+[0m18:42:15.502100 [info ] [MainThread]: adapter type: bigquery
+[0m18:42:15.503732 [info ] [MainThread]: adapter version: 1.12.0
+[0m18:42:15.635374 [info ] [MainThread]: Configuration:
+[0m18:42:15.635374 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:42:15.651288 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:42:15.651288 [info ] [MainThread]: Required dependencies:
+[0m18:42:15.651288 [debug] [MainThread]: Executing "git --help"
+[0m18:42:15.696024 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:42:15.696024 [debug] [MainThread]: STDERR: "b''"
+[0m18:42:15.696024 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:42:15.696024 [info ] [MainThread]: Connection:
+[0m18:42:15.696024 [info ] [MainThread]:   method: service-account
+[0m18:42:15.702579 [info ] [MainThread]:   database: casper-code-challenge
+[0m18:42:15.704570 [info ] [MainThread]:   execution_project: casper-code-challenge
+[0m18:42:15.705585 [info ] [MainThread]:   schema: casper_data_raw
+[0m18:42:15.705585 [info ] [MainThread]:   location: EU
+[0m18:42:15.707571 [info ] [MainThread]:   priority: interactive
+[0m18:42:15.708570 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m18:42:15.710188 [info ] [MainThread]:   reservation: None
+[0m18:42:15.711188 [info ] [MainThread]:   impersonate_service_account: None
+[0m18:42:15.713213 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m18:42:15.715738 [info ] [MainThread]:   job_retries: 1
+[0m18:42:15.716749 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m18:42:15.717784 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m18:42:15.718772 [info ] [MainThread]:   job_link_info_level_log: False
+[0m18:42:15.720208 [info ] [MainThread]:   timeout_seconds: 300
+[0m18:42:15.721256 [info ] [MainThread]:   client_id: None
+[0m18:42:15.722219 [info ] [MainThread]:   token_uri: None
+[0m18:42:15.722219 [info ] [MainThread]:   compute_region: None
+[0m18:42:15.727679 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m18:42:15.729688 [info ] [MainThread]:   gcs_bucket: None
+[0m18:42:15.730690 [info ] [MainThread]:   dataproc_batch: None
+[0m18:42:15.731703 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m18:42:16.273715 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m18:42:16.273715 [debug] [MainThread]: On debug: select 1 as id
+[0m18:42:16.273715 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:42:16.273715 [debug] [MainThread]: BigQuery adapter: Got an error when attempting to create a bigquery " "client: 'expected str, bytes or os.PathLike object, not NoneType'
+[0m18:42:16.273715 [debug] [MainThread]: BigQuery adapter: Unhandled error while running:
+select 1 as id
+[0m18:42:16.279682 [debug] [MainThread]: BigQuery adapter: Database Error
+  expected str, bytes or os.PathLike object, not NoneType
+[0m18:42:16.279682 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m18:42:16.279682 [info ] [MainThread]: [31m1 check failed:[0m
+[0m18:42:16.279682 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >'NoneType' object has no attribute 'close'
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m18:42:16.279682 [debug] [MainThread]: Command `dbt debug` failed at 18:42:16.279682 after 2.26 seconds
+[0m18:42:16.279682 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D2199DB2E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D22E4D8730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D22E4DAF20>]}
+[0m18:42:16.279682 [debug] [MainThread]: Flushing usage events
+[0m18:42:16.765426 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:43:57.996372 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C488F2B220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C48A61D7B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C48A61D4E0>]}
+
+
+============================== 18:43:57.996372 | 59320490-6f31-4460-a414-22fdf3996d1d ==============================
+[0m18:43:57.996372 [info ] [MainThread]: Running with dbt=1.12.2
+[0m18:43:57.996372 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\jainp\\Desktop\\My Repository\\dbt_casper', 'invocation_command': 'dbt debug', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\jainp\\Desktop\\My Repository\\dbt_casper\\logs'}
+[0m18:43:58.038848 [info ] [MainThread]: dbt version: 1.12.2
+[0m18:43:58.039819 [info ] [MainThread]: python version: 3.10.11
+[0m18:43:58.040817 [info ] [MainThread]: python path: C:\Users\jainp\Desktop\My Repository\dbt_casper\venv\Scripts\python.exe
+[0m18:43:58.041825 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m18:43:58.045816 [info ] [MainThread]: Using profiles dir at C:\Users\jainp\Desktop\My Repository\dbt_casper
+[0m18:43:58.046816 [info ] [MainThread]: Using profiles.yml file at C:\Users\jainp\Desktop\My Repository\dbt_casper\profiles.yml
+[0m18:43:58.047819 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\jainp\Desktop\My Repository\dbt_casper\dbt_project.yml
+[0m18:43:58.200647 [info ] [MainThread]: Configuration:
+[0m18:43:58.216541 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m18:43:58.216541 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:43:58.216541 [info ] [MainThread]: Required dependencies:
+[0m18:43:58.216541 [debug] [MainThread]: Executing "git --help"
+[0m18:43:58.252579 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:43:58.267987 [debug] [MainThread]: STDERR: "b''"
+[0m18:43:58.269008 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:43:58.270031 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m18:43:58.271037 [info ] [MainThread]: [31m1 check failed:[0m
+[0m18:43:58.272030 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  
+  dbt encountered an error while trying to read your profiles.yml file.
+  
+  The profiles.yml file at C:\Users\jainp\Desktop\My Repository\dbt_casper\profiles.yml is empty
+  
+
+
+[0m18:43:58.274015 [debug] [MainThread]: Command `dbt debug` failed at 18:43:58.273033 after 0.32 seconds
+[0m18:43:58.274015 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C488F2B220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C486BC74C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C48A61D480>]}
+[0m18:43:58.275048 [debug] [MainThread]: Flushing usage events
+[0m18:43:58.757305 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:44:47.376979 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001742F54B2B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017431D232B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017431D230D0>]}
+
+
+============================== 18:44:47.381682 | 27725154-17ef-4cc5-854b-3a10dbee0a26 ==============================
+[0m18:44:47.381682 [info ] [MainThread]: Running with dbt=1.12.2
+[0m18:44:47.381682 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\jainp\\Desktop\\My Repository\\dbt_casper', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\jainp\\Desktop\\My Repository\\dbt_casper\\logs'}
+[0m18:44:47.412829 [info ] [MainThread]: dbt version: 1.12.2
+[0m18:44:47.416997 [info ] [MainThread]: python version: 3.10.11
+[0m18:44:47.416997 [info ] [MainThread]: python path: C:\Users\jainp\Desktop\My Repository\dbt_casper\venv\Scripts\python.exe
+[0m18:44:47.416997 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m18:44:48.740766 [info ] [MainThread]: Using profiles dir at C:\Users\jainp\Desktop\My Repository\dbt_casper
+[0m18:44:48.740766 [info ] [MainThread]: Using profiles.yml file at C:\Users\jainp\Desktop\My Repository\dbt_casper\profiles.yml
+[0m18:44:48.740766 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\jainp\Desktop\My Repository\dbt_casper\dbt_project.yml
+[0m18:44:48.740766 [info ] [MainThread]: adapter type: bigquery
+[0m18:44:48.740766 [info ] [MainThread]: adapter version: 1.12.0
+[0m18:44:48.891241 [info ] [MainThread]: Configuration:
+[0m18:44:48.891241 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:44:48.891241 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:44:48.891241 [info ] [MainThread]: Required dependencies:
+[0m18:44:48.891241 [debug] [MainThread]: Executing "git --help"
+[0m18:44:48.933429 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:44:48.933429 [debug] [MainThread]: STDERR: "b''"
+[0m18:44:48.943815 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:44:48.944527 [info ] [MainThread]: Connection:
+[0m18:44:48.945585 [info ] [MainThread]:   method: service-account
+[0m18:44:48.946588 [info ] [MainThread]:   database: casper-code-challenge
+[0m18:44:48.947599 [info ] [MainThread]:   execution_project: casper-code-challenge
+[0m18:44:48.948588 [info ] [MainThread]:   schema: casper_data_raw
+[0m18:44:48.948588 [info ] [MainThread]:   location: EU
+[0m18:44:48.950588 [info ] [MainThread]:   priority: None
+[0m18:44:48.951598 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m18:44:48.951598 [info ] [MainThread]:   reservation: None
+[0m18:44:48.952621 [info ] [MainThread]:   impersonate_service_account: None
+[0m18:44:48.953594 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m18:44:48.954598 [info ] [MainThread]:   job_retries: 1
+[0m18:44:48.955586 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m18:44:48.956608 [info ] [MainThread]:   job_execution_timeout_seconds: None
+[0m18:44:48.958590 [info ] [MainThread]:   job_link_info_level_log: False
+[0m18:44:48.959585 [info ] [MainThread]:   timeout_seconds: None
+[0m18:44:48.960597 [info ] [MainThread]:   client_id: None
+[0m18:44:48.962590 [info ] [MainThread]:   token_uri: None
+[0m18:44:48.964425 [info ] [MainThread]:   compute_region: None
+[0m18:44:48.966446 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m18:44:48.967434 [info ] [MainThread]:   gcs_bucket: None
+[0m18:44:48.967434 [info ] [MainThread]:   dataproc_batch: None
+[0m18:44:48.968437 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m18:44:49.524367 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m18:44:49.524367 [debug] [MainThread]: On debug: select 1 as id
+[0m18:44:49.524367 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:44:50.557251 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=casper-code-challenge&j=bq:EU:7fb67de2-9875-4d06-846f-4775611021a1&page=queryresults
+[0m18:44:50.770421 [debug] [MainThread]: SQL status: OK in 0.225 seconds
+[0m18:44:53.319169 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m18:44:53.319169 [info ] [MainThread]: [32mAll checks passed![0m
+[0m18:44:53.335296 [debug] [MainThread]: Command `dbt debug` succeeded at 18:44:53.335296 after 6.11 seconds
+[0m18:44:53.335296 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:44:53.335296 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001742F54B2B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017443F67DF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017443F970A0>]}
+[0m18:44:53.335296 [debug] [MainThread]: Flushing usage events
+[0m18:44:53.787759 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:46:51.129259 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C87610B1F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8779071F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C877907010>]}
+
+
+============================== 18:46:51.136005 | 1fdb0f97-03b7-4677-89eb-b8514995dd36 ==============================
+[0m18:46:51.136005 [info ] [MainThread]: Running with dbt=1.12.2
+[0m18:46:51.136005 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\jainp\\Desktop\\My Repository\\dbt_casper', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt init', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\jainp\\Desktop\\My Repository\\dbt_casper\\logs'}
+[0m18:46:51.172909 [info ] [MainThread]: Setting up your profile.
+[0m18:47:08.878611 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m18:47:08.878611 [info ] [MainThread]: dbt version: 1.12.2
+[0m18:47:08.878611 [info ] [MainThread]: python version: 3.10.11
+[0m18:47:08.888970 [info ] [MainThread]: python path: C:\Users\jainp\Desktop\My Repository\dbt_casper\venv\Scripts\python.exe
+[0m18:47:08.890553 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m18:47:10.262277 [info ] [MainThread]: Using profiles dir at C:\Users\jainp\Desktop\My Repository\dbt_casper
+[0m18:47:10.262277 [info ] [MainThread]: Using profiles.yml file at C:\Users\jainp\Desktop\My Repository\dbt_casper\profiles.yml
+[0m18:47:10.262277 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\jainp\Desktop\My Repository\dbt_casper\dbt_project.yml
+[0m18:47:10.262277 [info ] [MainThread]: adapter type: bigquery
+[0m18:47:10.262277 [info ] [MainThread]: adapter version: 1.12.0
+[0m18:47:10.427493 [info ] [MainThread]: Configuration:
+[0m18:47:10.427493 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:47:10.427493 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:47:10.427493 [info ] [MainThread]: Required dependencies:
+[0m18:47:10.443813 [debug] [MainThread]: Executing "git --help"
+[0m18:47:10.495125 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:47:10.495125 [debug] [MainThread]: STDERR: "b''"
+[0m18:47:10.495125 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:47:10.495125 [info ] [MainThread]: Connection:
+[0m18:47:10.495125 [info ] [MainThread]:   method: service-account
+[0m18:47:10.495125 [info ] [MainThread]:   database: casper-code-challenge
+[0m18:47:10.495125 [info ] [MainThread]:   execution_project: casper-code-challenge
+[0m18:47:10.495125 [info ] [MainThread]:   schema: casper_data_raw
+[0m18:47:10.495125 [info ] [MainThread]:   location: EU
+[0m18:47:10.495125 [info ] [MainThread]:   priority: None
+[0m18:47:10.505458 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m18:47:10.506465 [info ] [MainThread]:   reservation: None
+[0m18:47:10.507465 [info ] [MainThread]:   impersonate_service_account: None
+[0m18:47:10.508466 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m18:47:10.508466 [info ] [MainThread]:   job_retries: 1
+[0m18:47:10.509502 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m18:47:10.511475 [info ] [MainThread]:   job_execution_timeout_seconds: None
+[0m18:47:10.512834 [info ] [MainThread]:   job_link_info_level_log: False
+[0m18:47:10.515835 [info ] [MainThread]:   timeout_seconds: None
+[0m18:47:10.516828 [info ] [MainThread]:   client_id: None
+[0m18:47:10.517825 [info ] [MainThread]:   token_uri: None
+[0m18:47:10.518844 [info ] [MainThread]:   compute_region: None
+[0m18:47:10.520564 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m18:47:10.521471 [info ] [MainThread]:   gcs_bucket: None
+[0m18:47:10.522477 [info ] [MainThread]:   dataproc_batch: None
+[0m18:47:10.523478 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m18:47:11.128024 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m18:47:11.129562 [debug] [MainThread]: On debug: select 1 as id
+[0m18:47:11.130644 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:47:11.941986 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=casper-code-challenge&j=bq:EU:63ea5139-6a3a-4ff5-a782-8f3b46fbaa75&page=queryresults
+[0m18:47:12.157423 [debug] [MainThread]: SQL status: OK in 0.204 seconds
+[0m18:47:12.431329 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m18:47:12.431329 [info ] [MainThread]: [32mAll checks passed![0m
+[0m18:47:12.431329 [debug] [MainThread]: Command `dbt init` succeeded at 18:47:12.431329 after 21.48 seconds
+[0m18:47:12.431329 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:47:12.431329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C87610B1F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C877906EF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8765CC7F0>]}
+[0m18:47:12.431329 [debug] [MainThread]: Flushing usage events
+[0m18:47:12.903193 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:47:31.923160 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018F3FF37340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018F41737370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018F41737190>]}
+
+
+============================== 18:47:31.923160 | 9e3e4151-3438-4785-9f7a-6205e98778ae ==============================
+[0m18:47:31.923160 [info ] [MainThread]: Running with dbt=1.12.2
+[0m18:47:31.923160 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\jainp\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt init', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\jainp\\Desktop\\My Repository\\dbt_casper\\logs'}
+[0m18:47:31.961738 [info ] [MainThread]: Setting up your profile.
+[0m18:47:44.032682 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m18:47:44.032682 [info ] [MainThread]: dbt version: 1.12.2
+[0m18:47:44.045614 [info ] [MainThread]: python version: 3.10.11
+[0m18:47:44.045614 [info ] [MainThread]: python path: C:\Users\jainp\Desktop\My Repository\dbt_casper\venv\Scripts\python.exe
+[0m18:47:44.047774 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m18:47:45.443910 [info ] [MainThread]: Using profiles dir at C:\Users\jainp\.dbt
+[0m18:47:45.443910 [info ] [MainThread]: Using profiles.yml file at C:\Users\jainp\.dbt\profiles.yml
+[0m18:47:45.450069 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\jainp\Desktop\My Repository\dbt_casper\dbt_project.yml
+[0m18:47:45.450069 [info ] [MainThread]: adapter type: bigquery
+[0m18:47:45.450069 [info ] [MainThread]: adapter version: 1.12.0
+[0m18:47:45.596435 [info ] [MainThread]: Configuration:
+[0m18:47:45.612393 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:47:45.612393 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:47:45.612393 [info ] [MainThread]: Required dependencies:
+[0m18:47:45.612393 [debug] [MainThread]: Executing "git --help"
+[0m18:47:45.662680 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:47:45.663699 [debug] [MainThread]: STDERR: "b''"
+[0m18:47:45.664999 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:47:45.666010 [info ] [MainThread]: Connection:
+[0m18:47:45.668003 [info ] [MainThread]:   method: service-account
+[0m18:47:45.669036 [info ] [MainThread]:   database: casper-code-challenge
+[0m18:47:45.670030 [info ] [MainThread]:   execution_project: casper-code-challenge
+[0m18:47:45.671017 [info ] [MainThread]:   schema: casper_data_raw
+[0m18:47:45.672630 [info ] [MainThread]:   location: EU
+[0m18:47:45.673789 [info ] [MainThread]:   priority: None
+[0m18:47:45.674806 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m18:47:45.675779 [info ] [MainThread]:   reservation: None
+[0m18:47:45.676769 [info ] [MainThread]:   impersonate_service_account: None
+[0m18:47:45.676769 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m18:47:45.678780 [info ] [MainThread]:   job_retries: 1
+[0m18:47:45.679786 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m18:47:45.680776 [info ] [MainThread]:   job_execution_timeout_seconds: None
+[0m18:47:45.681795 [info ] [MainThread]:   job_link_info_level_log: False
+[0m18:47:45.682774 [info ] [MainThread]:   timeout_seconds: None
+[0m18:47:45.683587 [info ] [MainThread]:   client_id: None
+[0m18:47:45.687410 [info ] [MainThread]:   token_uri: None
+[0m18:47:45.688403 [info ] [MainThread]:   compute_region: None
+[0m18:47:45.689414 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m18:47:45.690409 [info ] [MainThread]:   gcs_bucket: None
+[0m18:47:45.691399 [info ] [MainThread]:   dataproc_batch: None
+[0m18:47:45.692772 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m18:47:46.287196 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m18:47:46.287196 [debug] [MainThread]: On debug: select 1 as id
+[0m18:47:46.287196 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:47:47.144941 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=casper-code-challenge&j=bq:EU:c39a9108-2180-4e75-8860-8b9d7ac444e5&page=queryresults
+[0m18:47:47.404924 [debug] [MainThread]: SQL status: OK in 0.271 seconds
+[0m18:47:47.654532 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m18:47:47.656511 [info ] [MainThread]: [32mAll checks passed![0m
+[0m18:47:47.657532 [debug] [MainThread]: Command `dbt init` succeeded at 18:47:47.657532 after 15.89 seconds
+[0m18:47:47.658554 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:47:47.659503 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018F3FF37340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018F41737070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018F40A7D840>]}
+[0m18:47:47.659503 [debug] [MainThread]: Flushing usage events
+[0m18:47:48.100736 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:48:09.541381 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024F0544B250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024F06C47280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024F06C470A0>]}
+
+
+============================== 18:48:09.541381 | 1a9bb323-a91c-470e-8b02-00acc14f6c6a ==============================
+[0m18:48:09.541381 [info ] [MainThread]: Running with dbt=1.12.2
+[0m18:48:09.541381 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\jainp\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt init', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\jainp\\Desktop\\My Repository\\dbt_casper\\logs'}
+[0m18:48:09.580379 [info ] [MainThread]: Setting up your profile.
+[0m18:48:59.240447 [info ] [MainThread]: Profile dbt_casper written to C:\Users\jainp\.dbt\profiles.yml using target's profile_template.yml and your supplied values.
+[0m18:48:59.240447 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m18:48:59.240447 [info ] [MainThread]: dbt version: 1.12.2
+[0m18:48:59.246260 [info ] [MainThread]: python version: 3.10.11
+[0m18:48:59.247989 [info ] [MainThread]: python path: C:\Users\jainp\Desktop\My Repository\dbt_casper\venv\Scripts\python.exe
+[0m18:48:59.249087 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m18:48:59.338052 [info ] [MainThread]: Using profiles dir at C:\Users\jainp\.dbt
+[0m18:48:59.338052 [info ] [MainThread]: Using profiles.yml file at C:\Users\jainp\.dbt\profiles.yml
+[0m18:48:59.354180 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\jainp\Desktop\My Repository\dbt_casper\dbt_project.yml
+[0m18:48:59.354180 [info ] [MainThread]: adapter type: bigquery
+[0m18:48:59.354180 [info ] [MainThread]: adapter version: 1.12.0
+[0m18:48:59.485468 [info ] [MainThread]: Configuration:
+[0m18:48:59.485468 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:48:59.485468 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:48:59.485468 [info ] [MainThread]: Required dependencies:
+[0m18:48:59.485468 [debug] [MainThread]: Executing "git --help"
+[0m18:48:59.537517 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:48:59.537517 [debug] [MainThread]: STDERR: "b''"
+[0m18:48:59.537517 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:48:59.537517 [info ] [MainThread]: Connection:
+[0m18:48:59.537517 [info ] [MainThread]:   method: service-account
+[0m18:48:59.537517 [info ] [MainThread]:   database: casper-code-challenge
+[0m18:48:59.537517 [info ] [MainThread]:   execution_project: casper-code-challenge
+[0m18:48:59.537517 [info ] [MainThread]:   schema: casper_data_raw
+[0m18:48:59.537517 [info ] [MainThread]:   location: EU
+[0m18:48:59.537517 [info ] [MainThread]:   priority: interactive
+[0m18:48:59.551486 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m18:48:59.552531 [info ] [MainThread]:   reservation: None
+[0m18:48:59.553494 [info ] [MainThread]:   impersonate_service_account: None
+[0m18:48:59.555503 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m18:48:59.557028 [info ] [MainThread]:   job_retries: 1
+[0m18:48:59.559544 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m18:48:59.560559 [info ] [MainThread]:   job_execution_timeout_seconds: 1
+[0m18:48:59.561606 [info ] [MainThread]:   job_link_info_level_log: False
+[0m18:48:59.562589 [info ] [MainThread]:   timeout_seconds: 1
+[0m18:48:59.563554 [info ] [MainThread]:   client_id: None
+[0m18:48:59.564819 [info ] [MainThread]:   token_uri: None
+[0m18:48:59.565892 [info ] [MainThread]:   compute_region: None
+[0m18:48:59.566903 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m18:48:59.567905 [info ] [MainThread]:   gcs_bucket: None
+[0m18:48:59.568956 [info ] [MainThread]:   dataproc_batch: None
+[0m18:48:59.570412 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m18:49:00.167660 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m18:49:00.167660 [debug] [MainThread]: On debug: select 1 as id
+[0m18:49:00.183652 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:49:00.937946 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=casper-code-challenge&j=bq:EU:cbb738ca-950b-4095-aeaa-04abd99db1ba&page=queryresults
+[0m18:49:01.153409 [debug] [MainThread]: SQL status: OK in 0.214 seconds
+[0m18:49:01.417983 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m18:49:01.419668 [info ] [MainThread]: [32mAll checks passed![0m
+[0m18:49:01.421606 [debug] [MainThread]: Command `dbt init` succeeded at 18:49:01.421606 after 52.02 seconds
+[0m18:49:01.422654 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:49:01.423640 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024F0544B250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024F06C46F80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024F17DEBCD0>]}
+[0m18:49:01.423640 [debug] [MainThread]: Flushing usage events
+[0m18:49:01.885419 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:50:47.965249 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC7060B2B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC72DD74C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC72DD72E0>]}
+
+
+============================== 18:50:47.981361 | ddfe7732-7d0f-4f67-a646-6ddab5b9bfa5 ==============================
+[0m18:50:47.981361 [info ] [MainThread]: Running with dbt=1.12.2
+[0m18:50:47.981361 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\jainp\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt init', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\jainp\\Desktop\\My Repository\\dbt_casper\\logs'}
+[0m18:50:48.015413 [info ] [MainThread]: Setting up your profile.
+[0m18:50:56.650454 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m18:50:56.651454 [info ] [MainThread]: dbt version: 1.12.2
+[0m18:50:56.652454 [info ] [MainThread]: python version: 3.10.11
+[0m18:50:56.653460 [info ] [MainThread]: python path: C:\Users\jainp\Desktop\My Repository\dbt_casper\venv\Scripts\python.exe
+[0m18:50:56.654835 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m18:50:58.035365 [info ] [MainThread]: Using profiles dir at C:\Users\jainp\.dbt
+[0m18:50:58.035365 [info ] [MainThread]: Using profiles.yml file at C:\Users\jainp\.dbt\profiles.yml
+[0m18:50:58.035365 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\jainp\Desktop\My Repository\dbt_casper\dbt_project.yml
+[0m18:50:58.035365 [info ] [MainThread]: adapter type: bigquery
+[0m18:50:58.035365 [info ] [MainThread]: adapter version: 1.12.0
+[0m18:50:58.186057 [info ] [MainThread]: Configuration:
+[0m18:50:58.186057 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:50:58.186057 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m18:50:58.186057 [info ] [MainThread]: Required dependencies:
+[0m18:50:58.186057 [debug] [MainThread]: Executing "git --help"
+[0m18:50:58.244416 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:50:58.245441 [debug] [MainThread]: STDERR: "b''"
+[0m18:50:58.246442 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:50:58.247425 [info ] [MainThread]: Connection:
+[0m18:50:58.248409 [info ] [MainThread]:   method: service-account
+[0m18:50:58.249413 [info ] [MainThread]:   database: casper-code-challenge
+[0m18:50:58.250410 [info ] [MainThread]:   execution_project: casper-code-challenge
+[0m18:50:58.251422 [info ] [MainThread]:   schema: casper_data_raw
+[0m18:50:58.252424 [info ] [MainThread]:   location: EU
+[0m18:50:58.254418 [info ] [MainThread]:   priority: interactive
+[0m18:50:58.256066 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m18:50:58.258595 [info ] [MainThread]:   reservation: None
+[0m18:50:58.261600 [info ] [MainThread]:   impersonate_service_account: None
+[0m18:50:58.262246 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m18:50:58.263258 [info ] [MainThread]:   job_retries: 1
+[0m18:50:58.264255 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m18:50:58.265254 [info ] [MainThread]:   job_execution_timeout_seconds: 1
+[0m18:50:58.265923 [info ] [MainThread]:   job_link_info_level_log: False
+[0m18:50:58.265923 [info ] [MainThread]:   timeout_seconds: 1
+[0m18:50:58.265923 [info ] [MainThread]:   client_id: None
+[0m18:50:58.265923 [info ] [MainThread]:   token_uri: None
+[0m18:50:58.265923 [info ] [MainThread]:   compute_region: None
+[0m18:50:58.265923 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m18:50:58.272516 [info ] [MainThread]:   gcs_bucket: None
+[0m18:50:58.274533 [info ] [MainThread]:   dataproc_batch: None
+[0m18:50:58.277427 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m18:50:58.885105 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m18:50:58.885105 [debug] [MainThread]: On debug: select 1 as id
+[0m18:50:58.885105 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:50:59.724931 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=casper-code-challenge&j=bq:EU:d1eec32a-e261-4eaa-a42f-19881a781117&page=queryresults
+[0m18:50:59.953598 [debug] [MainThread]: SQL status: OK in 0.235 seconds
+[0m18:51:00.235186 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m18:51:00.235186 [info ] [MainThread]: [32mAll checks passed![0m
+[0m18:51:00.235186 [debug] [MainThread]: Command `dbt init` succeeded at 18:51:00.235186 after 12.41 seconds
+[0m18:51:00.235186 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:51:00.235186 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC7060B2B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC72DD7190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC72DD74C0>]}
+[0m18:51:00.235186 [debug] [MainThread]: Flushing usage events
+[0m18:51:00.692831 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:11:27.025776 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026356B8B2B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026358387490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026358387220>]}
+
+
+============================== 19:11:27.034467 | 049a557a-e125-4314-8e0f-96234f329192 ==============================
+[0m19:11:27.034467 [info ] [MainThread]: Running with dbt=1.12.2
+[0m19:11:27.034467 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\jainp\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt init', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m19:11:53.396309 [debug] [MainThread]: Starter project path: C:\Users\jainp\Desktop\My Repository\dbt_casper\venv\lib\site-packages\dbt\include\starter_project
+[0m19:11:53.437315 [info ] [MainThread]: Setting up your profile.
+[0m19:14:17.962874 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021D7789B2E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021D7A067340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021D7A0670D0>]}
+
+
+============================== 19:14:17.968524 | bc5a0e0f-d621-49a1-862f-99b7bdaba43f ==============================
+[0m19:14:17.968524 [info ] [MainThread]: Running with dbt=1.12.2
+[0m19:14:17.970632 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\jainp\\.dbt', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt init', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'logs'}
+[0m19:14:41.460809 [debug] [MainThread]: Starter project path: C:\Users\jainp\Desktop\My Repository\dbt_casper\venv\lib\site-packages\dbt\include\starter_project
+[0m19:14:41.499051 [info ] [MainThread]: Setting up your profile.
+[0m19:15:55.877422 [info ] [MainThread]: Profile dbt_casper written to C:\Users\jainp\.dbt\profiles.yml using target's profile_template.yml and your supplied values.
+[0m19:15:55.883826 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m19:15:55.884797 [info ] [MainThread]: dbt version: 1.12.2
+[0m19:15:55.886775 [info ] [MainThread]: python version: 3.10.11
+[0m19:15:55.888288 [info ] [MainThread]: python path: C:\Users\jainp\Desktop\My Repository\dbt_casper\venv\Scripts\python.exe
+[0m19:15:55.889337 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m19:15:55.988134 [info ] [MainThread]: Using profiles dir at C:\Users\jainp\.dbt
+[0m19:15:55.988134 [info ] [MainThread]: Using profiles.yml file at C:\Users\jainp\.dbt\profiles.yml
+[0m19:15:55.988134 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\jainp\Desktop\My Repository\dbt_casper\dbt_casper\dbt_project.yml
+[0m19:15:55.988134 [info ] [MainThread]: adapter type: bigquery
+[0m19:15:55.988134 [info ] [MainThread]: adapter version: 1.12.0
+[0m19:15:56.135606 [info ] [MainThread]: Configuration:
+[0m19:15:56.135606 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:15:56.135606 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m19:15:56.135606 [info ] [MainThread]: Required dependencies:
+[0m19:15:56.135606 [debug] [MainThread]: Executing "git --help"
+[0m19:15:56.194705 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:15:56.194705 [debug] [MainThread]: STDERR: "b''"
+[0m19:15:56.194705 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:15:56.194705 [info ] [MainThread]: Connection:
+[0m19:15:56.194705 [info ] [MainThread]:   method: service-account
+[0m19:15:56.194705 [info ] [MainThread]:   database: casper-code-challenge
+[0m19:15:56.194705 [info ] [MainThread]:   execution_project: casper-code-challenge
+[0m19:15:56.194705 [info ] [MainThread]:   schema: casper_curated
+[0m19:15:56.194705 [info ] [MainThread]:   location: EU
+[0m19:15:56.203769 [info ] [MainThread]:   priority: interactive
+[0m19:15:56.205787 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m19:15:56.206779 [info ] [MainThread]:   reservation: None
+[0m19:15:56.209188 [info ] [MainThread]:   impersonate_service_account: None
+[0m19:15:56.211218 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m19:15:56.213327 [info ] [MainThread]:   job_retries: 1
+[0m19:15:56.213327 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m19:15:56.214316 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m19:15:56.215316 [info ] [MainThread]:   job_link_info_level_log: False
+[0m19:15:56.216193 [info ] [MainThread]:   timeout_seconds: 300
+[0m19:15:56.216193 [info ] [MainThread]:   client_id: None
+[0m19:15:56.232834 [info ] [MainThread]:   token_uri: None
+[0m19:15:56.234858 [info ] [MainThread]:   compute_region: None
+[0m19:15:56.240286 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m19:15:56.254681 [info ] [MainThread]:   gcs_bucket: None
+[0m19:15:56.256675 [info ] [MainThread]:   dataproc_batch: None
+[0m19:15:56.263698 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m19:15:57.003489 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m19:15:57.003489 [debug] [MainThread]: On debug: select 1 as id
+[0m19:15:57.003489 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:15:57.894174 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=casper-code-challenge&j=bq:EU:3c04cd9b-d77c-418c-afe8-c184fe64b4f7&page=queryresults
+[0m19:15:58.134034 [debug] [MainThread]: SQL status: OK in 0.243 seconds
+[0m19:16:00.917541 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m19:16:00.917541 [info ] [MainThread]: [32mAll checks passed![0m
+[0m19:16:00.932382 [info ] [MainThread]: Your new dbt project "dbt_casper" was created!
+Initialized new project in C:\Users\jainp\Desktop\My Repository\dbt_casper\dbt_casper\dbt_casper
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m19:16:00.932382 [debug] [MainThread]: Command `dbt init` succeeded at 19:16:00.932382 after 103.14 seconds
+[0m19:16:00.932382 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m19:16:00.932382 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021D7789B2E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021D78C3BD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021D7A067100>]}
+[0m19:16:00.932382 [debug] [MainThread]: Flushing usage events
+[0m19:16:01.451761 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:19:17.567335 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000185F6FDB2E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000185F87D73A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000185F87D7130>]}
+
+
+============================== 19:19:17.574762 | 8045cf3e-3e38-49e7-b4ab-96b8dc9f5093 ==============================
+[0m19:19:17.574762 [info ] [MainThread]: Running with dbt=1.12.2
+[0m19:19:17.574762 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\jainp\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'log_path': 'logs'}
+[0m19:19:17.605486 [info ] [MainThread]: dbt version: 1.12.2
+[0m19:19:17.605486 [info ] [MainThread]: python version: 3.10.11
+[0m19:19:17.605486 [info ] [MainThread]: python path: C:\Users\jainp\Desktop\My Repository\dbt_casper\venv\Scripts\python.exe
+[0m19:19:17.605486 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m19:19:19.033986 [info ] [MainThread]: Using profiles dir at C:\Users\jainp\.dbt
+[0m19:19:19.033986 [info ] [MainThread]: Using profiles.yml file at C:\Users\jainp\.dbt\profiles.yml
+[0m19:19:19.033986 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\jainp\Desktop\My Repository\dbt_casper\dbt_project.yml
+[0m19:19:19.033986 [info ] [MainThread]: adapter type: bigquery
+[0m19:19:19.033986 [info ] [MainThread]: adapter version: 1.12.0
+[0m19:19:19.033986 [info ] [MainThread]: Configuration:
+[0m19:19:19.033986 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:19:19.033986 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m19:19:19.047008 [info ] [MainThread]: Required dependencies:
+[0m19:19:19.047947 [debug] [MainThread]: Executing "git --help"
+[0m19:19:19.153600 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:19:19.153600 [debug] [MainThread]: STDERR: "b''"
+[0m19:19:19.153600 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:19:19.153600 [info ] [MainThread]: Connection:
+[0m19:19:19.153600 [info ] [MainThread]:   method: service-account
+[0m19:19:19.153600 [info ] [MainThread]:   database: casper-code-challenge
+[0m19:19:19.153600 [info ] [MainThread]:   execution_project: casper-code-challenge
+[0m19:19:19.153600 [info ] [MainThread]:   schema: casper_data_raw
+[0m19:19:19.153600 [info ] [MainThread]:   location: EU
+[0m19:19:19.153600 [info ] [MainThread]:   priority: interactive
+[0m19:19:19.169262 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m19:19:19.170273 [info ] [MainThread]:   reservation: None
+[0m19:19:19.171271 [info ] [MainThread]:   impersonate_service_account: None
+[0m19:19:19.172274 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m19:19:19.173293 [info ] [MainThread]:   job_retries: 1
+[0m19:19:19.174273 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m19:19:19.176275 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m19:19:19.176275 [info ] [MainThread]:   job_link_info_level_log: False
+[0m19:19:19.177271 [info ] [MainThread]:   timeout_seconds: 300
+[0m19:19:19.178271 [info ] [MainThread]:   client_id: None
+[0m19:19:19.179294 [info ] [MainThread]:   token_uri: None
+[0m19:19:19.180286 [info ] [MainThread]:   compute_region: None
+[0m19:19:19.181295 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m19:19:19.182275 [info ] [MainThread]:   gcs_bucket: None
+[0m19:19:19.183270 [info ] [MainThread]:   dataproc_batch: None
+[0m19:19:19.184271 [info ] [MainThread]: Registered adapter: bigquery=1.12.0
+[0m19:19:19.721200 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m19:19:19.721200 [debug] [MainThread]: On debug: select 1 as id
+[0m19:19:19.721200 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:19:20.548454 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=casper-code-challenge&j=bq:EU:e7a4a627-47ef-413a-819e-4c0fa3e52d68&page=queryresults
+[0m19:19:20.795080 [debug] [MainThread]: SQL status: OK in 0.255 seconds
+[0m19:19:21.050567 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m19:19:21.050567 [info ] [MainThread]: [31m1 check failed:[0m
+[0m19:19:21.050567 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\jainp\Desktop\My Repository\dbt_casper\dbt_project.yml> not found
+
+[0m19:19:21.050567 [debug] [MainThread]: Command `dbt debug` failed at 19:19:21.050567 after 3.63 seconds
+[0m19:19:21.050567 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m19:19:21.050567 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000185F6FDB2E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000185F875AE60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000185F870CA30>]}
+[0m19:19:21.050567 [debug] [MainThread]: Flushing usage events
+[0m19:19:21.527976 [debug] [MainThread]: An error was encountered while trying to flush usage events
+{"data":{"log_version":3,"version":"=2.0.0-preview.205"},"info":{"category":"","code":"A001","extra":{},"invocation_id":"01a006af-03e3-7f40-b0d8-e4e47f2d776c","level":"info","msg":"Running with dbt-fusion=2.0.0-preview.205","name":"MainReportVersion","pid":11160,"thread":"tokio-rt-worker","ts":"2026-08-15T18:28:48.285972Z"}}
+{"data":{"args":{"debug":"false","invocation_command":"C:\\Users\\jainp\\.local\\bin\\dbt.exe license info --json --log-format json","log_format":"json","quiet":"false","write_json":"true"}},"info":{"category":"","code":"A002","extra":{},"invocation_id":"01a006af-03e3-7f40-b0d8-e4e47f2d776c","level":"debug","msg":"running dbt-fusion with arguments {\"command\":\"license\",\"vars\":\"{}\",\"limit\":\"10\",\"debug\":false,\"log_format\":\"json\",\"quiet\":false,\"write_json\":true,\"write_catalog\":false,\"manage_state\":false}","name":"MainReportArgs","pid":11160,"thread":"tokio-rt-worker","ts":"2026-08-15T18:28:48.286842Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a006af-03e3-7f40-b0d8-e4e47f2d776c","level":"debug","msg":"No platform credentials found, skipping remote license","name":"Generic","pid":11160,"thread":"tokio-rt-worker","ts":"2026-08-15T18:28:48.342066Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a006af-03e3-7f40-b0d8-e4e47f2d776c","level":"debug","msg":"Requesting trial license from https://cloud.getdbt.com/api/private/trial-licenses/","name":"Generic","pid":11160,"thread":"main","ts":"2026-08-15T18:28:50.019223Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a006af-03e3-7f40-b0d8-e4e47f2d776c","level":"debug","msg":"Trial license retrieved","name":"Generic","pid":11160,"thread":"main","ts":"2026-08-15T18:28:50.399355Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a006af-03e3-7f40-b0d8-e4e47f2d776c","level":"debug","msg":"Trial license from trial license server is expired","name":"Generic","pid":11160,"thread":"tokio-rt-worker","ts":"2026-08-15T18:28:50.407376Z"}}
+{"data":{"columns":[],"is_inline":true,"node_name":"license_info","output_format":"json","preview":"{\n  \"status\": \"trial_expired\",\n  \"licensing_enabled\": true,\n  \"expires_at\": \"2026-06-22T18:13:37+00:00\",\n  \"license_type\": \"trial\"\n}","unique_id":"license.info"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"01a006af-03e3-7f40-b0d8-e4e47f2d776c","level":"info","msg":"{\n  \"status\": \"trial_expired\",\n  \"licensing_enabled\": true,\n  \"expires_at\": \"2026-06-22T18:13:37+00:00\",\n  \"license_type\": \"trial\"\n}","name":"ShowNode","pid":11160,"thread":"tokio-rt-worker","ts":"2026-08-15T18:28:50.418703Z"}}
+{"data":{"completed_at":"2026-08-15T18:28:50.454674Z","elapsed":2.1718192100524902,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"01a006af-03e3-7f40-b0d8-e4e47f2d776c","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'license' successfully [2.2s]","name":"CommandCompleted","pid":11160,"thread":"tokio-rt-worker","ts":"2026-08-15T18:28:50.458203Z"}}

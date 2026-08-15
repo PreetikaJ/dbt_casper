@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: casper_data_raw
+    database: casper-code-challenge
+    schema: casper_data_raw
+    tables: 
+      - name: exercises
+      - name: patients
+      - name: steps

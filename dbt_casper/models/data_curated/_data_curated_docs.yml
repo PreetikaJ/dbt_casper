@@ -1,0 +1,63 @@
+version: 2
+
+models:
+  - name: exercises_curated
+    description: "dbt model for exercises dataset."
+    config:
+      persist_docs:
+        relation: true
+        columns: true
+    columns:
+      - name: exercise_id
+        description: "Unique exercise ID."
+        tests:
+          - unique
+          - not_null
+      - name: patients_id
+        description: "Patient identifier."
+      - name: exercise_minutes
+        description: "Duration of the exercise in minutes."
+      - name: exercise_completed_at
+        description: "Timestamp when the exercise was completed."
+      - name: exercise_updated_at
+        description: "Timestamp when the exercise was last updated."
+
+  - name: patients_curated
+    description: "dbt model for patients dataset."
+    config:
+      persist_docs:
+        relation: true
+        columns: true
+    columns:
+      - name: patient_id
+        description: "Unique patient ID."
+        tests:
+          - unique
+          - not_null
+      - name: first_name
+        description: "Patient's first name."
+      - name: last_name
+        description: "Patient's last name."
+      - name: country
+        description: "Patient's country of residence."
+
+  - name: steps_curated
+    description: "dbt model for steps dataset."
+    config:
+      persist_docs:
+        relation: true
+        columns: true
+    columns:
+      - name: steps_id
+        description: "Unique step ID."
+        tests:
+          - unique
+          - not_null
+      - name: patient_id
+        description: "Unique patient ID."
+      - name: step_count
+        description: "Number of steps taken."
+      - name: submission_time
+        description: "Timestamp when the steps were submitted."
+      - name: updated_at
+        description: "Timestamp when the steps were last updated."

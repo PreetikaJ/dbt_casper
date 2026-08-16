@@ -13,7 +13,7 @@ models:
         tests:
           - unique
           - not_null
-      - name: patients_id
+      - name: patient_id
         description: "Patient identifier."
       - name: exercise_minutes
         description: "Duration of the exercise in minutes."
@@ -54,7 +54,7 @@ models:
           - unique
           - not_null
       - name: patient_id
-        description: "Unique patient ID."
+        description: "Patient identifier."
       - name: step_count
         description: "Number of steps taken."
       - name: submission_time

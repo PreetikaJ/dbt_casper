@@ -8,3 +8,11 @@ sources:
       - name: exercises
       - name: patients
       - name: steps
+
+  - name: casper_data_curated
+    database: casper-code-challenge
+    schema: casper_data_curated
+    tables: 
+      - name: exercises_curated
+      - name: patients_curated
+      - name: steps_curated

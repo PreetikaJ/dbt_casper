@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: patients_engagement_reporting
+    description: "dbt model for patients engagement reporting."
+    config:
+      persist_docs:
+        relation: true
+        columns: true
+    columns:
+      - name: patient_id
+        description: "Unique patient ID."
+        tests:
+          - unique
+          - not_null
+      - name: first_name
+        description: "Patient's first name."
+      - name: last_name
+        description: "Patient's last name."
+      - name: country
+        description: "Patient's country of residence."
+      - name: total_minutes
+        description: "Total minutes of engagement calculated from steps and exercises."

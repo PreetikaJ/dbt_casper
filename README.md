@@ -15,8 +15,11 @@ A complete end-to-end data pipeline for the Casper health and wellness platform.
 7. [Component Details](#component-details)
 8. [Data Flow](#data-flow)
 9. [Assumptions & Design Decisions](#assumptions--design-decisions)
-10. [Tradeoffs](#tradeoffs)
-11. [Troubleshooting](#troubleshooting)
+10. [Future Enhancements](#future-enhancements)
+11. [Documentation & Metadata](#documentation--metadata)
+12. [Monitoring](#monitoring)
+13. [Tradeoffs](#tradeoffs)
+14. [Troubleshooting](#troubleshooting)
 
 ---
 
@@ -213,7 +216,7 @@ Connection test: [OK]
 
 ---
 
-## ▶️ compiling and Running the Pipeline
+## ▶️ Compiling and Running the Pipeline
 
 ### Full Pipeline (Recommended)
 
@@ -634,7 +637,7 @@ All models include YAML documentation with:
 
 ---
 
-## Monitoring & Troubleshooting
+## Monitoring
 
 ### Check Model Lineage
 ```bash

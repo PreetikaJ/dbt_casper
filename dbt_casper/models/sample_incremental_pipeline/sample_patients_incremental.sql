@@ -12,12 +12,6 @@ with source_data as (
         last_name,
         country
     from {{ source('casper_data_raw', 'sample_patients') }}
-    {% if is_incremental() %}
-        where patient_id not in (
-            select patient_id
-            from {{ this }}
-        )
-    {% endif %}
 ),
 
 deduplicated as (

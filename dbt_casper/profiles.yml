@@ -4,7 +4,7 @@ dbt_casper:
       dataset: casper_data_raw
       job_execution_timeout_seconds: 300
       job_retries: 1
-      keyfile: 'C:/Users/jainp/Downloads/casper-code-challenge-b2a02376a078.json'
+      #keyfile: 'PATH TO JSON KEY'
       location: EU
       method: service-account
       priority: interactive
@@ -16,7 +16,7 @@ dbt_casper:
       dataset: casper_data_curated
       job_execution_timeout_seconds: 300
       job_retries: 1
-      keyfile: 'C:/Users/jainp/Downloads/casper-code-challenge-b2a02376a078.json'
+      #keyfile: 'PATH TO JSON KEY'
       location: EU
       method: service-account
       priority: interactive
@@ -28,7 +28,7 @@ dbt_casper:
       dataset: casper_data_reporting
       job_execution_timeout_seconds: 300
       job_retries: 1
-      keyfile: 'C:/Users/jainp/Downloads/casper-code-challenge-b2a02376a078.json'
+      #keyfile: 'PATH TO JSON KEY'
       location: EU
       method: service-account
       priority: interactive

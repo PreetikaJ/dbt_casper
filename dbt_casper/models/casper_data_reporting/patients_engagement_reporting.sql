@@ -43,5 +43,5 @@ select
     first_name,
     last_name,
     country,
-    round(total_minutes, 2) as total_minutes
+    cast(round(total_minutes) as int64) as total_minutes
 from patient_engagement

@@ -19,7 +19,7 @@ A complete end-to-end data pipeline for the Casper health and wellness platform.
 11. [Documentation & Metadata](#documentation--metadata)
 12. [Monitoring](#monitoring)
 13. [Tradeoffs](#tradeoffs)
-14. [Troubleshooting](#troubleshooting)
+14. [Troubleshooting](#troubleshooting) 
 
 ---
 

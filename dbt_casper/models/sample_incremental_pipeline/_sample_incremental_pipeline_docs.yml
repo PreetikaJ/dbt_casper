@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: sample_patients_incremental
+    description: "dbt model for sample patients dataset."
+    config:
+      persist_docs:
+        relation: true
+        columns: true
+
+  - name: sample_exercise_incremental
+    description: "dbt model for sample exercises dataset."
+    config:
+      persist_docs:
+        relation: true
+        columns: true
+  
+  - name: sample_steps_incremental
+    description: "dbt model for steps dataset."
+    config:
+      persist_docs:
+        relation: true
+        columns: true
+
+  - name: patients_engagement_incremental
+    description: "dbt model for patients engagement dataset."
+    config:
+      persist_docs:
+        relation: true
+        columns: true

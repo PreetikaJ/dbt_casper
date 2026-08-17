@@ -8,6 +8,10 @@ sources:
       - name: exercises
       - name: patients
       - name: steps
+      # below are the sample tables for incremental pipeline
+      - name: sample_exercises
+      - name: sample_patients
+      - name: sample_steps
 
   - name: casper_data_curated
     database: casper-code-challenge
@@ -16,3 +20,7 @@ sources:
       - name: exercises_curated
       - name: patients_curated
       - name: steps_curated
+      # below are the sample tables for incremental pipeline
+      - name: sample_exercise_incremental
+      - name: sample_patients_incremental
+      - name: sample_steps_incremental
